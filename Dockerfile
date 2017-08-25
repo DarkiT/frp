@@ -11,7 +11,7 @@ RUN cd /go/src/github.com/fatedier/frp \
  && mv conf/frpc.ini /frpc.ini \
  && mv conf/frps.ini /frps.ini \
  && make clean
-
+RUN ls
 RUN chmod +x /init.sh 
 WORKDIR /
 
