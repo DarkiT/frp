@@ -2,7 +2,6 @@ FROM golang:1.8
 
 VOLUME /data
 
-COPY bash/ /
 COPY . /go/src/github.com/fatedier/frp
 
 RUN cd /go/src/github.com/fatedier/frp \
@@ -13,6 +12,7 @@ RUN cd /go/src/github.com/fatedier/frp \
  && mv conf/frps.ini /frps.ini \
  && make clean
 
+COPY /go/src/github.com/fatedier/frp/bash/ /
 RUN chmod +x /init.sh 
 WORKDIR /
 
