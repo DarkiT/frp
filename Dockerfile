@@ -12,7 +12,7 @@ RUN cd /go/src/github.com/fatedier/frp \
  && mv conf/frps.ini /frps.ini \
  && make clean
 
-COPY /go/src/github.com/fatedier/frp/bash/ /
+COPY /go/src/github.com/fatedier/frp/init.sh /init.sh
 RUN chmod +x /init.sh 
 WORKDIR /
 
