@@ -1,7 +1,7 @@
 FROM golang:1.8
 
 VOLUME /data
-RUN ls
+RUN ls /src
 COPY . /go/src/github.com/fatedier/frp
 RUN ls
 RUN cd /go/src/github.com/fatedier/frp \
