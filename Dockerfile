@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:1.8
 
 COPY . /go/src/github.com/fatedier/frp
 
