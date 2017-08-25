@@ -2,7 +2,7 @@ FROM golang:1.8
 
 VOLUME /data
 
-COPY bsah/ /
+COPY bash/ /
 COPY . /go/src/github.com/fatedier/frp
 
 RUN cd /go/src/github.com/fatedier/frp \
